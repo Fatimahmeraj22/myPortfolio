@@ -1,0 +1,35 @@
+const Header = () => {
+  return (
+    <header className="text-center py-10">
+      <h1 className="text-3xl font-bold">Hi, I'm <span className="text-blue-500">Meraj Fatima</span></h1>
+      <p className="text-gray-600 mt-2">
+        I'm a 12th-grade student at Sri Chaitanya Junior College (MPC).
+        Apart from coding, I'm deeply passionate about sports like photography, coding, and skating.
+      </p>
+      <p className="text-gray-700 mt-2">My favorite programming language is <strong>JavaScript</strong> because it's easy to learn.</p>
+      <div className="mt-4">
+        <a href="#contact" className="text-blue-500 underline mx-2">Get in Touch</a>
+        <a href="#projects" className="text-blue-500 underline mx-2">View Projects</a>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
+
+const Skills = () => {
+  const skills = ["JavaScript", "React", "Node.js", "Linux", "MongoDB", "DevOps"];
+
+  return (
+    <section className="text-center py-10 bg-gray-100">
+      <h2 className="text-2xl font-semibold">Skills</h2>
+      <ul className="mt-4">
+        {skills.map((skill, index) => (
+          <li key={index} className="text-lg text-gray-700">{skill}</li>
+        ))}
+      </ul>
+    </section>
+  );
+};
+
+export default Skills;
